@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ค้นหาดวงดาวในตัวคุณ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <div class="quiz-wrapper">
+            <h1>✨ Stellar ✨</h1>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <div id="quiz-container">
+                <div id="question-number" class="question-number">คำถามที่ 1/10</div>
+                <div id="question" class="question"></div>
+                <div id="choices" class="choices"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-btn" class="nav-btn" onclick="previousQuestion()" style="display: none;">
+                        ← ย้อนกลับ
+                    </button>
+                </div>
+            </div>
+            <div id="result" style="display: none;">
+                <h2>✨ ผลการค้นหาดวงดาวของคุณ ✨</h2>
+                <div class="result-content">
+                    <div id="star-result"></div>
+                    <div id="star-icon" class="star-icon"></div>
+                    <button id="restart-btn" onclick="restartQuiz()" class="restart-btn">
+                        เริ่มทำแบบทดสอบใหม่
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
